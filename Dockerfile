@@ -6,5 +6,5 @@ COPY source/package*.json ./
 RUN npm install
 COPY source/* ./
 USER ${USER_ID}
-EXPOSE 8081
+EXPOSE 8080
 CMD ["node", "server.js"]
