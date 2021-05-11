@@ -29,7 +29,7 @@ function foo() {
   console.log("Hello, World!!!");
 }
 
-a = foo();
+let a = foo();
 
 var x = ["Saab", "Volvo", "BMW"];
 var y = x.reverse(); // Noncompliant
