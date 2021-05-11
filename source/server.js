@@ -29,15 +29,13 @@ function foo() {
   console.log("Hello, World!!!");
 }
 
-let a = foo();
-
 var x = ["Saab", "Volvo", "BMW"];
-var y = x.reverse(); // Noncompliant
-var z = y.sort(); // Noncompliant
+x.reverse(); // Noncompliant
+y.sort(); // Noncompliant
 
 var m = 8;
 var n = "8";
 
-if (m === n) {  // Noncompliant; always false
+if (m == n) {  // Noncompliant; always false
   // ...
 }
